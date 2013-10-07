@@ -1,0 +1,57 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background: #ffe44d;
+	font-size: 12px;
+	color: #424242;
+}
+
+header {
+	background: url("../img/stripe.png");
+	padding-top: 12px;
+	height: 100px;
+}
+
+.hive-61-logo {
+	margin: 0 auto;
+	display: block;
+}
+
+.beehive .col-lg-12 h1,
+.beehive .col-lg-12 p {
+	text-align: center;
+}
+
+.beehive .col-lg-12 button {
+	margin: 0 auto;
+	display: block;
+}
+
+.beehive {
+	text-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.beehive h1 {
+	font: normal 2.6em/1.2em "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+	margin: 1em auto;
+}
+.beehive p {
+	font: normal 1.96em/1.2em "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
