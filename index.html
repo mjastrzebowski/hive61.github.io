@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 	
         <!--
@@ -26,50 +26,100 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-  	<header>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  	
+    <header>
     	<img class="hive-61-logo" src="img/hive-61-logo-248x92.png" />    
 	</header>
 
     <div class="container beehive">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-12">
+        <div class="column span8">
         	<h1>
-        		Hive61 is Poznan's Startup and Business Community.</br>
-        		It's a series of meetups for people with entrepreneurial drive in Poznań.        		
+        		hive61 is Poznan's Startup and Business Community.
+        		<span>It's a series of meetups for people with entrepreneurial drive in Poznań.</span>
         	</h1>
-            <p>Hive is a dynamic entrepreneurial community. We invite everyone related with based in Poznan startups, businesses and any creative organizations.</p>
-			<p>From time to time we will be organizing meetings, preceded by valuable presentations given by known speakers. Each will take place in different location - because it's hive and it's not connected to one location.</p>
-			<p>You ask why "61"? Simple - it comes from Poznań post and area codes :)</p>
-			<p>Often presentations will be held in English - we find it important to have such an event in Poznań.</p>
-			<button><i class="icon-chevron-up"> Less <i class="icon-chevron-up"></button>
-
+            <div class="togglable" style="display: none;">
+                <p>Hive is a dynamic entrepreneurial community. We invite everyone related with based in Poznan startups, businesses and any creative organizations.</p>
+    			<p>From time to time we will be organizing meetings, preceded by valuable presentations given by known speakers. Each will take place in different location - because it's hive and it's not connected to one location.</p>
+    			<p>You ask why "61"? Simple - it comes from Poznań post and area codes :)</p>
+    			<p>Often presentations will be held in English - we find it important to have such an event in Poznań.</p>
+    		</div>	
+            <div class="switch">
+                <button class="less" style="display: none"><i class="icon-chevron-up"></i> Less <i class="icon-chevron-up"></i></button>
+                <button class="more"><i class="icon-chevron-down"></i> More <i class="icon-chevron-down"></i></button>
+            </div>
+                
 			<form>
 			
 			<div class="input-append">
-			  <input type="text" placeholder="Your email address" class="span2">
-			  <button type="submit" class="btn">Submit</button>
+			  <input type="text" placeholder="Your email address" class="span5">
+			  <button type="submit" class="btn">Subscribe</button>
 			</div>
 
 			</form>
 
+        </div>
+
+        <div class="span8 social">
+            <div class="facebook">
+                <div class="fb-like-box" data-href="http://www.facebook.com/hive61" data-width="292" data-height="280" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+            </div>
+            <div class="twitter">
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Hive61"  data-widget-id="386836040918388736">Tweets about @Hive61</a>
+                <script>!function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");</script>
+            </div>
+            <iframe class="meetup" src="http://meetu.ps/21Cmhn" frameborder="0"></iframe>
         </div>
       </div>
 
       
 
       <footer>
-        <p>&copy; Hive 61 Poznań</p>
+        <p>&copy; Hive61 Poznań</p>
       </footer>
-    </div> <!-- /container 
-
-		-->        
+    </div> <!-- /container -->        
 		
     	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+            $(".switch .less").click(function(){
+                $(".more").toggle();
+                $(".less").toggle();
+                $(".togglable").slideToggle(500);
+                });
+            $(".switch .more").click(function(){
+                $(".more").toggle();
+                $(".less").toggle();
+                $(".togglable").slideToggle(500);
+                });            
+
+            });
+
+
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
