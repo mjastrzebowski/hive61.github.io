@@ -1,5 +1,133 @@
-<html>
-<body>
-hello world
-</body>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto%20Sans&subset=latin,latin-ext">
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+	
+        <!--
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        -->
+          
+        <link rel="stylesheet" href="css/main.css">      
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+       
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  	
+    <header>
+    	<img class="hive-61-logo" src="img/hive-61-logo-248x92.png" />    
+	</header>
+
+    <div class="container beehive">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="column span8">
+        	<h1>
+        		hive61 is Poznań's Startup and Business Community.
+        		<span>It's a series of meetups for people with entrepreneurial drive in Poznań.</span>
+        	</h1>
+            <div class="togglable" style="display: none;">
+                <p>Hive is a dynamic entrepreneurial community. We invite everyone involved in startups, businesses or any other creative organizations based in Poznań.</p>
+    			<p>From time to time we will be organizing meetings, preceded by valuable presentations given by known speakers. Each will take place in different location - because it's a hive and it's not connected to one location.</p>
+    			<p>You ask why "61"? That's simple - it Poznań's postal code :)</p>
+    			<p>Presentation will be often held in English.  We'd like anyone interested to be able to join in.</p>
+    		</div>	
+            <div class="switch">
+                <button class="less" style="display: none"><i class="icon-chevron-up"></i> Less <i class="icon-chevron-up"></i></button>
+                <button class="more"><i class="icon-chevron-down"></i> More <i class="icon-chevron-down"></i></button>
+            </div>
+                
+			<form>
+			
+			<div class="input-append">
+			  <input type="text" placeholder="Your email address" class="span5">
+			  <button type="submit" class="btn">Subscribe</button>
+			</div>
+
+			</form>
+
+        </div>
+
+        <div class="span8 social">
+            <div class="facebook">
+                <div class="fb-like-box" data-href="http://www.facebook.com/hive61" data-width="292" data-height="300" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+            </div>
+            <div class="twitter">
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Hive61"  data-widget-id="386836040918388736">Tweets about @Hive61</a>
+                <script>!function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");</script>
+            </div>
+            <iframe class="meetup" src="http://meetu.ps/21Cmhn" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      
+
+      <footer>
+        <p>&copy; Hive61 Poznań</p>
+      </footer>
+    </div> <!-- /container -->        
+		
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+            $(".switch .less").click(function(){
+                $(".more").toggle();
+                $(".less").toggle();
+                $(".togglable").slideToggle(500);
+                });
+            $(".switch .more").click(function(){
+                $(".more").toggle();
+                $(".less").toggle();
+                $(".togglable").slideToggle(500);
+                });            
+
+            });
+
+
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
