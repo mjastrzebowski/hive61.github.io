@@ -6,7 +6,7 @@
 
 body {
 	background: #ffe44d;
-	font-size: 11px;
+	font: normal 9px/1.6em "Noto Sans", "Trebuchet MS", Helvetica, sans serif;
 	color: #424242;
 }
 
@@ -34,15 +34,9 @@ header {
 .beehive .column h1,
 footer {
 	text-align: center;
+	font-weight: normal;
 }
 
-.beehive .column h1 span {
-	display: block;
-	font-size: 0.6em;
-	color: ;
-	text-transform: uppercase;
-	text-shadow: none;
-}
 
 .beehive .column button {
 	margin: 0 auto;
@@ -54,18 +48,31 @@ footer {
 }
 
 .beehive h1 {
-	font: normal 3em/1.4em "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+	font-size: 3.2em;
 	margin: 1em auto 0.5em;
 }
+
+.beehive .column h1 span {
+	display: block;
+	font-size: 0.6em;
+	color: ;
+	text-transform: uppercase;
+	text-shadow: none;
+	margin-top: 0.7em;
+}
+
 .beehive p {
-	font: normal 1.85em/1.4em "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+	font-size: 1.85em;
+	line-height: 1.6em;
 	margin-bottom: 20px;
 	text-shadow: none;
 }
 
 .beehive .switch button {
 	text-transform: uppercase;
-	font: normal 3.8em "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+	font-size: 3.2em;
+	font-family: inherit;
+	line-height: 1em;
 	color: #424242;
 	background: transparent none; 
 	border: none;
@@ -97,7 +104,9 @@ footer {
 	height: 58px;
 	width: 160px;
 	color: #ffe44d;
-	font: normal 26px "Tw Cen MT", "Trebuchet MS", Helvetica, Sans serif;
+	font-size: 20px;
+	font-family: inherit;
+	text-transform: uppercase;
 	background: none #484848;
 }
 
